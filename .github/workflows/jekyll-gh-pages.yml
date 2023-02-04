@@ -36,6 +36,7 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        theme: minimal
 
   # Deployment job
   deploy:
@@ -49,4 +50,3 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
 
-theme: minimal
